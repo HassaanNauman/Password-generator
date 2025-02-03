@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="head">Password Generator</h1>
+        <button class="showPassBox elem">
+          <p class="showPass">Click Generate</p>
+          <p class="copy"></p>
+          <div class="copyPass"></div>
+        </button>
+        <div class="rangeOfPass">
+          <div class="title">
+            Length
+            <b style="color: #fff; font-weight: bolder" class="length"></b>
+          </div>
+          <div class="elem">
+            <div class="text">4</div>
+            <input
+              min="4"
+              max="32"
+              value="10"
+              type="range"
+              name=""
+              id=""
+              class="rangeInp"
+            />
+            <div class="text">32</div>
+          </div>
+        </div>
+
+        <div class="settingBox">
+          <div class="title">Settings:</div>
+          <div class="elem">
+            <p class="text">Include Uppercase</p>
+            <label class="switch btn">
+              <input type="checkbox" class="uppercaseEl" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="elem">
+            <p class="text">Include Lowercase</p>
+            <label class="switch btn">
+              <input type="checkbox" checked class="lowercaseEl" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="elem">
+            <p class="text">Include Symbols</p>
+            <label class="switch btn">
+              <input type="checkbox" checked class="symbolEl" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="elem">
+            <p class="text">Include Numbers</p>
+            <label class="switch btn">
+              <input type="checkbox" class="numberEl" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="generatePassBtnBox">
+          <button>Generate Password</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js.js"></script>
+  </body>
+</html>
